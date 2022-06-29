@@ -17,7 +17,7 @@
     "db:test:reset": "dotenv -e .env.test node .vn/scripts/js-generated/reset.mjs",
     "mongo": "yarn run start:mongo",
     "//start:mongo": "### Will start or create & start the image + store data locally in .mongo folder + remove the container when stopped.",
-    "start:mongo": "docker run --rm -p 27017:27017 -v \"$(pwd)/.mongo:/data/db\" --label vulcan-mongodb mongo:4.0.4 ",
+    "start:mongo": "docker run --rm -p 27017:27017 -v \"$(pwd)/.mongo:/data/db/\" --label vulcan-mongodb mongo:4.0.4 ",
     "//start:mongo:windows": "### See https://stackoverflow.com/questions/46604827/pwd-in-npm-script/71214387",
     "start:mongo:windows": "docker run --rm -p 27017:27017 -v \"%cd%\\.mongo:/data/db\" --label vulcan-mongodb mongo:4.0.4",
     "//_____Dev Next app____": "",
